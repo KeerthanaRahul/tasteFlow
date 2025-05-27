@@ -1,7 +1,7 @@
 export const data = {
   happy: {
     main: [
-      { name: "Cheesy Margherita Pizza", description: "Classic delight with extra cheese", price: 250, calories: 300, image: "https://cdn.uengage.io/uploads/5/image-342266-1715596630.png" },
+      { name: "Cheesy Margherita Pizza", description: "Classic delight with extra cheeses", price: 250, calories: 300, image: "https://cdn.uengage.io/uploads/5/image-342266-1715596630.png" },
       { name: "Peri Peri Paneer Burger", description: "Spicy grilled paneer with creamy mayo", price: 220, calories: 450, image: "/images/burger1.jpg" },
       { name: "Mexican Tacos", description: "Crispy tacos filled with beans & salsa", price: 200, calories: 380, image: "/images/tacos.jpg" },
       { name: "Stuffed Garlic Bread", description: "Garlic bread loaded with cheese & veggies", price: 180, calories: 320, image: "/images/garlicbread.jpg" },
