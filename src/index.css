@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -65,4 +69,70 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-accent-800 bg-cream;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif leading-tight;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md transition-all duration-300 font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-800 text-white hover:bg-primary-700 active:bg-primary-900;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600 active:bg-secondary-700;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary-800 text-primary-800 hover:bg-primary-800 hover:text-white;
+  }
+  
+  .section-title {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-serif font-bold mb-6 text-primary-800;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-accent-600 mb-12 max-w-3xl mx-auto;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-soft p-6 transition-all duration-300 hover:shadow-medium;
+  }
+  
+  .form-input {
+    @apply w-full px-4 py-3 rounded-md border border-accent-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
 }
