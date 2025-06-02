@@ -54,6 +54,8 @@ const OrderScreen = () => {
             />
             <Typography variant="body1">{item.name}</Typography>
             <Typography variant="body2">{item.description}</Typography>
+            <Typography variant="body2">₹{item.price} |  {item.calories} cal</Typography>
+           
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 2, marginTop: 1 }}>
               <IconButton color="secondary" onClick={() => handleRemoveFromCart(item)}>
                 <RemoveIcon />
